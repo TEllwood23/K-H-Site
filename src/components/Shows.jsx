@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchShows } from '../api'; // Adjusted path to point to api.js in src
+import { fetchShows } from '../api';
 
 function Shows() {
   const [shows, setShows] = useState([]);
@@ -9,6 +9,7 @@ function Shows() {
     async function getShows() {
       const data = await fetchShows();
       setShows(data);
+      console.log(shows);
     }
     getShows();
   }, []);
@@ -20,7 +21,7 @@ function Shows() {
         {shows.map(show => (
           <li key={show.id}>
             <h2>{show.title}</h2>
-            <p>Video URL: {show.videoUrl}</p>
+            <p>Video URL: <a href={show.videoUrl} target="_blank" rel="noopener noreferrer">{show.videoUrl}</a></p>
             <img src={show.picture} alt={show.title} style={{ width: '200px' }} />
           </li>
         ))}
