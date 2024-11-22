@@ -4,7 +4,7 @@ import About from './pages/About';
 
 function App() {
   return (
-    <div className= "bg-background">
+    <div className= "bg-background min-w-screen min-h-screen">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

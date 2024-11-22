@@ -2,15 +2,18 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: '#4B9EEA',  // Corrected with #
-        textPrimary: '#FFFFFF', // Corrected with #
-        textSecondary: '#FFD600', // Corrected with #
-      }
+        background: '#4B9EEA',  // Background color
+        textPrimary: '#FFFFFF', // Primary text color
+        textSecondary: '#FFD600', // Secondary text color
+      },
+      fontFamily: {
+        sans: ['Kadwa', 'sans-serif'], // Kadwa as your main font
+      },
     },
   },
   plugins: [
