@@ -8,7 +8,10 @@ function App() {
     <div className="bg-background min-h-screen flex flex-col">
       {/* Router setup */}
       <Router>
+        {/* Static NavBar */}
         <NavBar />
+
+        {/* Main content area */}
         <main className="flex-grow p-4">
           <Routes>
             <Route path="/" element={<Home />} />
