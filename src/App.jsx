@@ -5,13 +5,16 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className= "bg-background min-w-screen min-h-screen">
+    <div className="bg-background min-h-screen flex flex-col">
+      {/* Router setup */}
       <Router>
-      <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <NavBar />
+        <main className="flex-grow p-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
       </Router>
     </div>
   );
