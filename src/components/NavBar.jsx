@@ -40,10 +40,10 @@ function NavBar() {
       {/* Full Navbar for Large Screens */}
       <nav className="hidden md:flex justify-between items-center p-4 bg-background text-textPrimary">
         <ul className="flex gap-10">
-          <li><a href="#about" className="text-5xl font-sans">About</a></li>
-          <li><a href="#live" className="text-5xl font-sans">Live</a></li>
-          <li><a href="#tv" className="text-5xl font-sans">TV</a></li>
-          <li><a href="#videos" className="text-5xl font-sans">Videos</a></li>
+          <li><a href="#about" className="text-border text-6xl font-sans">About</a></li>
+          <li><a href="#live" className="text-border text-border-default text-6xl font-sans">Live</a></li>
+          <li><a href="#tv" className="text-border text-6xl font-sans">TV</a></li>
+          <li><a href="#videos" className="text-border text-6xl font-sans">Videos</a></li>
         </ul>
       </nav>
 
@@ -77,10 +77,10 @@ function NavBar() {
             style={{ top: `${iconPosition.y + 40}px`, left: `${iconPosition.x}px` }}
             className="absolute bg-background p-4 rounded-md shadow-lg flex flex-col gap-y-2"
           >
-            <li><a href="#about" className="text-lg">About</a></li>
-            <li><a href="#live" className="text-lg">Live</a></li>
-            <li><a href="#tv" className="text-lg">TV</a></li>
-            <li><a href="#videos" className="text-lg">Videos</a></li>
+            <li><a href="#about" className="text-textPrimary text-lg font-sans">About</a></li>
+            <li><a href="#live" className="text-textPrimary text-lg">Live</a></li>
+            <li><a href="#tv" className="text-textPrimary text-lg">TV</a></li>
+            <li><a href="#videos" className="text-textPrimary text-lg">Videos</a></li>
           </ul>
         )}
       </div>

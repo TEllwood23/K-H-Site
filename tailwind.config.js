@@ -19,9 +19,20 @@ export default {
   plugins: [
     function({ addUtilities }) {
       addUtilities({
-        '.textSecondary': {
-          color: '#FFD600', // Match your secondaryText color
-          outline: '1px solid black', // Black outline
+        '.text-border': {
+          '-webkit-text-stroke': '1px black', // Default stroke
+        },
+        '.text-border-primary': {
+          '-webkit-text-stroke': '1px #FFFFFF', // Stroke using primary text color
+          'color': '#FFFFFF',                  // Ensure color is applied
+        },
+        '.text-border-secondary': {
+          '-webkit-text-stroke': '1px #FFFFFF', // Stroke using primary text color
+          'color': 'FFD600',                  // Ensure color is applied
+        },
+        '.text-border-thick': {
+          '-webkit-text-stroke': '3px black', // Thicker stroke
+          'color': '#FFFFFF',                // Ensure color remains visible
         },
       });
     },
