@@ -6,8 +6,8 @@ import NavBar from './components/NavBar';
 function App() {
   return (
     <div className= "bg-background min-w-screen min-h-screen">
-      <NavBar />
       <Router>
+      <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

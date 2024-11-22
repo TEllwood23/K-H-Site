@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false); // For the burger menu
@@ -40,7 +41,7 @@ function NavBar() {
       {/* Full Navbar for Large Screens */}
       <nav className="hidden md:flex justify-between items-center p-4 bg-background text-textPrimary">
         <ul className="flex gap-10">
-          <li><a href="#about" className="text-5xl font-sans">About</a></li>
+          <li><Link to="/about" className="text-5xl font-sans">About</Link></li>
           <li><a href="#live" className="text-5xl font-sans">Live</a></li>
           <li><a href="#tv" className="text-5xl font-sans">TV</a></li>
           <li><a href="#videos" className="text-5xl font-sans">Videos</a></li>
@@ -71,12 +72,11 @@ function NavBar() {
         {isOpen && (
           <ul
             style={{ top: iconPosition.y + 40, left: iconPosition.x }}
-            className="absolute bg-background p-4 rounded-md shadow-lg flex flex-col gap-y-2"
-          >
-            <li><a href="#about" className="text-lg">About</a></li>
-            <li><a href="#live" className="text-lg">Live</a></li>
-            <li><a href="#tv" className="text-lg">TV</a></li>
-            <li><a href="#videos" className="text-lg">Videos</a></li>
+            className="absolute bg-background p-4 rounded-md shadow-lg flex flex-col gap-y-2">
+            <li><Link to="/about" className="text-3xl font-sans">About</Link></li>
+            <li><a href="#live" className="text-3xl font-sans">Live</a></li>
+            <li><a href="#tv" className="text-3xl">TV</a></li>
+            <li><a href="#videos" className="text-3xl">Videos</a></li>
           </ul>
         )}
       </div>
