@@ -5,7 +5,22 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: '#4B9EEA',  // Corrected with #
+        textPrimary: '#FFFFFF', // Corrected with #
+        textSecondary: '#FFD600', // Corrected with #
+      }
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.textSecondary': {
+          color: '#FFD600', // Match your secondaryText color
+          outline: '1px solid black', // Black outline
+        },
+      });
+    },
+  ],
+};

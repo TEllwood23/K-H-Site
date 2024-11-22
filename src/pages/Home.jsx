@@ -3,7 +3,7 @@
 function Home() {
   return (
     <div>
-      <h1>Welcome to My Website- with new home page</h1>
+      <h1 className="text-textPrimary">Welcome to My Website- with new home page</h1>
       <p>This is the main landing page for the site.</p>
 
       {/* Move Vite logo, React logo, and counter here */}
