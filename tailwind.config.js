@@ -10,6 +10,7 @@ export default {
         background: '#4B9EEA',  // Background color
         textPrimary: '#FFFFFF', // Primary text color
         textSecondary: '#FFD600', // Secondary text color
+        textTertiary: '#FF0000',
       },
       fontFamily: {
         sans: ['Kadwa', 'sans-serif'], // Kadwa as your main font
@@ -28,7 +29,11 @@ export default {
         },
         '.text-border-secondary': {
           '-webkit-text-stroke': '1px #FFFFFF', // Stroke using primary text color
-          'color': 'FFD600',                  // Ensure color is applied
+          'color': '#FFD600',                  // Ensure color is applied
+        },
+        '.text-border-tertiary': {
+          '-webkit-text-stroke': '0.25px #000000', // Stroke using primary text color
+          'color': '#FF0000',                  // Ensure color is applied
         },
         '.text-border-thick': {
           '-webkit-text-stroke': '3px black', // Thicker stroke

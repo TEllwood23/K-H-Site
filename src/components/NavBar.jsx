@@ -48,7 +48,7 @@ function NavBar() {
       </nav>
 
       <div className="absolute top-4 right-4 flex items-center gap-4">
-       <span className="font-sans">Contact at</span>
+       <span className="font-sans text-border-tertiary">Contact at</span>
        <img src="/path-to-your-image.png" alt="Contact Icon" className="w-8 h-8 cursor-pointer" />
       </div>
 
