@@ -1,4 +1,4 @@
-//Burger menuy sidebar
+// with CONTAINER 24/11/24
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -9,23 +9,56 @@ function App() {
   return (
     <div className="bg-background min-h-screen">
       <Router>
-        {/* Static NavBar */}
-        <NavBar />
+        <div className="container mx-auto px-4 border bg-gray-200">
+          {/* Static NavBar */}
+          <NavBar />
 
-        {/* Main Content */}
-        <main className="pt-16 p-4">
-          {/* Add padding to ensure content is not hidden behind a fixed navbar */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main>
+          {/* Main Content */}
+          <main className="pt-16">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </main>
+        </div>
       </Router>
     </div>
   );
 }
 
 export default App;
+
+
+//Burger menuy sidebar
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './pages/Home';
+// import About from './pages/About';
+// import NavBar from './components/NavBar';
+
+// function App() {
+//   return (
+//     <div className="bg-background min-h-screen ">
+//       <Router>
+//         <navbar className="flex justify-center">
+//         {/* Static NavBar */}
+//           <NavBar />
+//         </navbar>
+
+//         {/* Main Content */}
+//         <main className="pt-2 p-2 flex justify-center">
+//           {/* Add padding to ensure content is not hidden behind a fixed navbar */}
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="/about" element={<About />} />
+//           </Routes>
+//         </main>
+//       </Router>
+//     </div>
+//   );
+// }
+
+// export default App;
 
 
 //TESTING POINTER EVENTS 24/11/24
