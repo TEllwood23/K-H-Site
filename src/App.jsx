@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="bg-background min-h-screen">
       <Router>
-        <div className="container mx-auto px-4 border bg-gray-200">
+        <div className="container mx-auto px-4 border bg-gray-200 max-w-screen-l">
           {/* Static NavBar */}
           <NavBar />
 
