@@ -1,5 +1,6 @@
-// Popping out from side 24/11/24
+//Added Links and made more ARIA
 
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 function NavBar() {
@@ -16,16 +17,24 @@ function NavBar() {
       <nav className="hidden md:flex justify-between items-center p-4 bg-background text-textPrimary">
         <ul className="flex gap-10">
           <li>
-            <a href="#about" className="text-border text-6xl font-sans">About</a>
+            <Link to="/about" className="text-border text-6xl font-sans">
+              About
+            </Link>
           </li>
           <li>
-            <a href="#live" className="text-border text-border-default text-6xl font-sans">Live</a>
+            <Link to="/live" className="text-border text-6xl font-sans">
+              Live
+            </Link>
           </li>
           <li>
-            <a href="#tv" className="text-border text-6xl font-sans">TV</a>
+            <Link to="/tv" className="text-border text-6xl font-sans">
+              TV
+            </Link>
           </li>
           <li>
-            <a href="#videos" className="text-border text-6xl font-sans">Videos</a>
+            <Link to="/videos" className="text-border text-6xl font-sans">
+              Videos
+            </Link>
           </li>
         </ul>
       </nav>
@@ -35,6 +44,8 @@ function NavBar() {
         {/* Burger Icon */}
         <button
           onClick={handleClick}
+          aria-expanded={isOpen} // Indicates menu state
+          aria-label="Open menu" // Describes button purpose
           className="flex flex-col gap-1 cursor-pointer"
         >
           <span className="block h-0.5 w-6 bg-white" />
@@ -47,25 +58,36 @@ function NavBar() {
           className={`fixed top-0 left-0 h-full w-64 bg-background shadow-lg transform ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
           } transition-transform duration-300`}
+          role="menu" // Defines as a menu
+          aria-hidden={!isOpen} // Hides from screen readers when closed
         >
           <button
             onClick={handleClick}
+            aria-label="Close menu" // Describes close button
             className="absolute top-4 right-4 text-textPrimary text-lg"
           >
             Close
           </button>
           <ul className="p-4">
             <li className="mb-4">
-              <a href="#about" className="text-textPrimary text-lg font-sans">About</a>
+              <Link to="/about" role="menuitem" className="text-textPrimary text-lg font-sans">
+                About
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#live" className="text-textPrimary text-lg">Live</a>
+              <Link to="/live" role="menuitem" className="text-textPrimary text-lg">
+                Live
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#tv" className="text-textPrimary text-lg">TV</a>
+              <Link to="/tv" role="menuitem" className="text-textPrimary text-lg">
+                TV
+              </Link>
             </li>
             <li className="mb-4">
-              <a href="#videos" className="text-textPrimary text-lg">Videos</a>
+              <Link to="/videos" role="menuitem" className="text-textPrimary text-lg">
+                Videos
+              </Link>
             </li>
           </ul>
         </div>
@@ -75,6 +97,85 @@ function NavBar() {
 }
 
 export default NavBar;
+
+
+// Popping out from side 24/11/24
+
+// import { useState } from 'react';
+
+// function NavBar() {
+//   const [isOpen, setIsOpen] = useState(false); // For toggling the menu
+
+//   // Toggle the dropdown menu
+//   const handleClick = () => {
+//     setIsOpen(!isOpen);
+//   };
+
+//   return (
+//     <div className="relative w-full">
+//       {/* Full Navbar for Large Screens */}
+//       <nav className="hidden md:flex justify-between items-center p-4 bg-background text-textPrimary">
+//         <ul className="flex gap-10">
+//           <li>
+//             <a href="#about" className="text-border text-6xl font-sans">About</a>
+//           </li>
+//           <li>
+//             <a href="#live" className="text-border text-border-default text-6xl font-sans">Live</a>
+//           </li>
+//           <li>
+//             <a href="#tv" className="text-border text-6xl font-sans">TV</a>
+//           </li>
+//           <li>
+//             <a href="#videos" className="text-border text-6xl font-sans">Videos</a>
+//           </li>
+//         </ul>
+//       </nav>
+
+//       {/* Burger Menu for Small Screens */}
+//       <div className="md:hidden fixed top-4 left-4">
+//         {/* Burger Icon */}
+//         <button
+//           onClick={handleClick}
+//           className="flex flex-col gap-1 cursor-pointer"
+//         >
+//           <span className="block h-0.5 w-6 bg-white" />
+//           <span className="block h-0.5 w-6 bg-white" />
+//           <span className="block h-0.5 w-6 bg-white" />
+//         </button>
+
+//         {/* Slide-Out Menu */}
+//         <div
+//           className={`fixed top-0 left-0 h-full w-64 bg-background shadow-lg transform ${
+//             isOpen ? 'translate-x-0' : '-translate-x-full'
+//           } transition-transform duration-300`}
+//         >
+//           <button
+//             onClick={handleClick}
+//             className="absolute top-4 right-4 text-textPrimary text-lg"
+//           >
+//             Close
+//           </button>
+//           <ul className="p-4">
+//             <li className="mb-4">
+//               <a href="#about" className="text-textPrimary text-lg font-sans">About</a>
+//             </li>
+//             <li className="mb-4">
+//               <a href="#live" className="text-textPrimary text-lg">Live</a>
+//             </li>
+//             <li className="mb-4">
+//               <a href="#tv" className="text-textPrimary text-lg">TV</a>
+//             </li>
+//             <li className="mb-4">
+//               <a href="#videos" className="text-textPrimary text-lg">Videos</a>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default NavBar;
 
 
 
