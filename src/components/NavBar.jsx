@@ -12,7 +12,7 @@ function NavBar() {
 
   // Define navigation links
   const links = [
-    { path: '/home', label: 'Home' },
+    { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/live', label: 'Live' },
     { path: '/tv', label: 'TV' },
