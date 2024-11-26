@@ -4,29 +4,33 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-background min-h-screen flex flex-col">
       <Router>
-        <div className="container mx-auto px-4 border bg-gray-200 max-w-screen-l">
-          {/* Static NavBar */}
-          <NavBar />
+        {/* Static NavBar */}
+        <NavBar />
 
-          {/* Main Content */}
-          <main className="pt-16">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-          </main>
-        </div>
+        {/* Main Content */}
+        <main className="flex-grow container mx-auto px-4 max-w-screen-lg pt-16">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
       </Router>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+
 
 
 //Burger menuy sidebar
