@@ -28,7 +28,7 @@ export default {
           'color': '#FFFFFF',                  // Ensure color is applied
         },
         '.text-border-secondary': {
-          '-webkit-text-stroke': '1px #FFFFFF', // Stroke using primary text color
+          '-webkit-text-stroke': '0.1px #000000', // Stroke using primary text color
           'color': '#FFD600',                  // Ensure color is applied
         },
         '.text-border-tertiary': {

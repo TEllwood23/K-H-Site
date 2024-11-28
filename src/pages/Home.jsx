@@ -1,27 +1,27 @@
-// src/pages/Home.jsx
+// version with styling
 
-//NEW ATTEMPT AT UNIQUE QUOTES
-
-// import Quotation from '../components/QuotationWriter.jsx';
+// import QuotationWriter from '../components/QuotationWriter.jsx';
+// import QuotationActor from '../components/QuotationActor.jsx';
+// import QuotationLive from '../components/QuotationLive.jsx';
+// import QuotationComedian from '../components/QuotationComedian.jsx';
 
 // function Home() {
 //   return (
 //     <div className="container mx-auto px-4">
 //       <h1 className="text-textPrimary text-6xl font-sans">Kieran Hodgson</h1>
-//       <p className="text-textPrimary text-3xl font-sans">Actor - Comedian- Writer.</p>
+//       <p className="text-textPrimary text-3xl font-sans">Actor - Comedian - Writer</p>
 //       <div>
 //         <img
 //           src="/images/KH_Big_Scotland_2_with_quote.png"
 //           alt="Kieran Hodgson performing his Big in Scotland show"
 //           className="sticky left-0 object-cover rounded-lg shadow-lg"
 //         />
-//         <div className="bg-white p-4">
-//           {/* Positioning with flex */}
-//           <div className="flex justify-between px-4">
-//             <Quotation count={1} />
-//             <Quotation count={1} />
-//             <Quotation count={1} />
-//             <Quotation count={1} />
+//         <div className="flex-1 p-4 rounded-lg lg:pt-10 md:pt-6">
+//           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+//             <QuotationWriter className="p-2 text-lg sm:text-base font-sans text-textSecondary" />
+//             <QuotationActor className="p-2 text-lg sm:text-base font-sans text-textSecondary" />
+//             <QuotationLive className="p-2 text-lg sm:text-base font-sans text-textSecondary" />
+//             <QuotationComedian className="p-2 text-lg sm:text-base font-sans text-textSecondary" />
 //           </div>
 //         </div>
 //       </div>
@@ -58,7 +58,7 @@ function Home() {
         </div>
 
         {/* Quotations Section */}
-        <div className="flex-1 bg-white p-4 rounded-lg shadow-md lg:pt-10 md:pt-6">
+        <div className="flex-1 p-4 rounded-lg lg:pt-10 md:pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <QuotationWriter className="p-2 text-lg sm:text-base" />
             <QuotationActor className="p-2 text-lg sm:text-base" />
