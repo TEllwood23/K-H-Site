@@ -44,8 +44,8 @@ function Home() {
   return (
     <div className="container mx-auto px-4 pb-4">
       {/* Title Section */}
-      <h1 className="text-textPrimary text-6xl sm:text-5xl font-sans">Kieran Hodgson</h1>
-      <p className="text-textPrimary text-3xl sm:text-2xl font-sans">Actor - Comedian - Writer.</p>
+      <h1 className="text-textPrimary text-4xl sm:text-3xl md:text-5xl font-sans">Kieran Hodgson</h1>
+      <p className="text-textPrimary text-2xl sm:text-xl font-sans">Actor - Comedian - Writer.</p>
 
       <div className="flex flex-col lg:flex-row gap-4 mt-6">
         {/* Image Section */}
