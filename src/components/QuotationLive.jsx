@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import quotes from '../data/quotes.json'; // Adjust the path if needed
+import quotes from '../data/quotationsWriter.json'; // Adjust the path if needed
 
 function Quotation() {
   const [currentQuote, setCurrentQuote] = useState(null); // Current quote
