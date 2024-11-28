@@ -38,17 +38,17 @@ function NavBar() {
       </nav> */}
 
 
-      <nav className="hidden md:flex justify-evenly items-center p-4 bg-background text-textPrimary">
-  <ul className="flex w-full max-w-screen-xl mx-auto gap-10 justify-between">
-    {filteredLinks.map((link) => (
-      <li key={link.path}>
-        <Link to={link.path} className="text-textPrimary text-lg font-sans">
-          {link.label}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</nav>
+    <nav className="hidden md:flex justify-evenly items-center p-4 bg-background text-textPrimary text-border-primary">
+      <ul className="flex w-full max-w-screen-xl mx-auto gap-10 justify-between">
+        {filteredLinks.map((link) => (
+          <li key={link.path}>
+            <Link to={link.path} className="text-textPrimary text-lg md:text-3xl font-sans">
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+  </nav>
 
 
       {/* Burger Menu for Small Screens */}
