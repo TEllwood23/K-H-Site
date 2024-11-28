@@ -23,7 +23,7 @@ function Home() {
         </div>
 
         {/* Quotations Section */}
-        <div className="flex-1 bg-white p-4 rounded-lg shadow-md">
+        <div className="flex-1 bg-white p-4 rounded-lg shadow-md lg:pt-10 md:pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Quotation className="p-2 text-lg sm:text-base" />
             <Quotation className="p-2 text-lg sm:text-base" />
