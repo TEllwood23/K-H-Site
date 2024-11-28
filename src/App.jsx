@@ -11,10 +11,9 @@ function App() {
     <div className="bg-background min-h-screen flex flex-col">
       <Router>
         {/* Static NavBar */}
-        <NavBar />
-
+         <NavBar />
         {/* Main Content */}
-        <main className="flex-grow container mx-auto px-4 max-w-screen-lg pt-4">
+        <main className="flex-grow container mx-auto px-4 max-w-screen-lg pt-10 lg:pt-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
