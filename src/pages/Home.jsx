@@ -45,7 +45,7 @@ function Home() {
     <div className="container mx-auto px-7 pb-4">
       {/* Title Section */}
       <div className="flex flex-col md:flex-row items-center justify-center">
-        <h1 className="flex-1 text-textPrimary text-2xl md:text-4xl lg:text-5xl font-sans lg:ml-10">Kieran Hodgson.</h1>
+        <h1 className="flex-1 text-textPrimary text-border-thick text-2xl md:text-4xl lg:text-5xl font-sans lg:ml-10 drop-shadow-2xl font-bold">Kieran Hodgson.</h1>
         <p className="flex-1 text-textPrimary text-xl md:text-2xl lg:text-3xl font-sans lg:ml-12">Actor - Comedian - Writer.</p>
       </div>
 

@@ -37,7 +37,7 @@ export default {
           'color': '#FF0000',                  // Ensure color is applied
         },
         '.text-border-thick': {
-          '-webkit-text-stroke': '3px black', // Thicker stroke
+          '-webkit-text-stroke': '0.5px black', // Thicker stroke
           'color': '#FFFFFF',                // Ensure color remains visible
         },
       });
