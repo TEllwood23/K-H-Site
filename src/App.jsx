@@ -14,7 +14,7 @@ function App() {
         <NavBar />
 
         {/* Main Content */}
-        <main className="flex-grow container mx-auto px-4 max-w-screen-lg pt-16">
+        <main className="flex-grow container mx-auto px-4 max-w-screen-lg pt-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
