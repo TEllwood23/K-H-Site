@@ -42,10 +42,12 @@ import QuotationComedian from '../components/QuotationComedian.jsx';
 
 function Home() {
   return (
-    <div className="container mx-auto px-4 pb-4">
+    <div className="container mx-auto px-7 pb-4">
       {/* Title Section */}
-      <h1 className="text-textPrimary text-4xl sm:text-3xl md:text-5xl font-sans">Kieran Hodgson</h1>
-      <p className="text-textPrimary text-2xl sm:text-xl font-sans">Actor - Comedian - Writer.</p>
+      <div className="flex flex-col md:flex-row items-center justify-center">
+        <h1 className="flex-1 text-textPrimary text-2xl md:text-4xl lg:text-5xl font-sans lg:ml-10">Kieran Hodgson.</h1>
+        <p className="flex-1 text-textPrimary text-xl md:text-2xl lg:text-3xl font-sans lg:ml-12">Actor - Comedian - Writer.</p>
+      </div>
 
       <div className="flex flex-col lg:flex-row gap-4 mt-6">
         {/* Image Section */}
@@ -53,17 +55,17 @@ function Home() {
           <img
             src="/images/KH_Big_Scotland_2_with_quote.png"
             alt="Kieran Hodgson performing his Big in Scotland show"
-            className="w-full object-cover rounded-lg shadow-lg"
+            className="w-full object-cover rounded-lg shadow-lg lg:pt-10 bg-black"
           />
         </div>
 
         {/* Quotations Section */}
-        <div className="flex-1 p-4 rounded-lg lg:pt-10 md:pt-6">
+        <div className="flex-1 p-4 rounded-lg lg:pt-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <QuotationWriter className="p-2 text-lg sm:text-base" />
-            <QuotationActor className="p-2 text-lg sm:text-base" />
-            <QuotationLive className="p-2 text-lg sm:text-base" />
-            <QuotationComedian className="p-2 text-lg sm:text-base" />
+            <QuotationWriter className="p-2 text-l sm:text-l md:text-l lg:text-xl"/>
+            <QuotationActor className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+            <QuotationLive className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+            <QuotationComedian className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
           </div>
         </div>
       </div>

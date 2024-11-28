@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types'; // Add PropTypes for validation
 import quotes from '../data/quotationsComedian.json'; // Adjust the path if needed
 
-function Quotation() {
+function Quotation({ className }) {
   const [currentQuote, setCurrentQuote] = useState(null); // Current quote
   const [fadeClass, setFadeClass] = useState('opacity-0'); // Fade animation class
   const [quotePool, setQuotePool] = useState([...quotes]); // Pool of quotes
@@ -32,15 +33,20 @@ function Quotation() {
   }, []); // Empty dependency array, no unnecessary re-renders
 
   return (
-    <div className={`transition-opacity duration-1000 ${fadeClass} text-center`}>
+    <div className={`transition-opacity duration-1000 ${fadeClass} ${className} text-center`}>
       {currentQuote && (
         <div className="text-l font-sans">
           <p className="text-black">{`"${currentQuote.quote}"`}</p>
           <p className="text-textSecondary">{currentQuote.source}</p>
-        </div>
+      </div>
       )}
     </div>
   );
 }
+
+// Add PropTypes for validation
+Quotation.propTypes = {
+  className: PropTypes.string, // Validate `className` as a string
+};
 
 export default Quotation;
