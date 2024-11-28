@@ -67,7 +67,7 @@ function NavBar() {
 
         {/* Slide-Out Menu */}
         <div
-          className={`fixed top-0 left-0 h-full w-64 bg-background shadow-lg transform ${
+          className={`fixed top-0 left-0 h-full w-48 bg-burgerMenuBackground shadow-lg transform ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
           } transition-transform duration-300`}
           role="menu"
@@ -76,14 +76,14 @@ function NavBar() {
           <button
             onClick={handleClick}
             aria-label="Close menu"
-            className="absolute top-4 right-4 text-textPrimary text-lg"
+            className="absolute top-4 right-4 text-black text-lg"
           >
             Close
           </button>
           <ul className="p-4">
             {filteredLinks.map((link) => (
               <li key={link.path} className="mb-4">
-                <Link to={link.path} role="menuitem" className="text-textPrimary text-lg font-sans">
+                <Link to={link.path} role="menuitem" className="text-black text-lg font-sans">
                   {link.label}
                 </Link>
               </li>

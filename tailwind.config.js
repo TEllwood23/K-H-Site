@@ -11,6 +11,7 @@ export default {
         textPrimary: '#FFFFFF', // Primary text color
         textSecondary: '#FFD600', // Secondary text color
         textTertiary: '#FF0000',
+        burgerMenuBackground: '#FFD600'
       },
       fontFamily: {
         sans: ['Kadwa', 'sans-serif'], // Kadwa as your main font
