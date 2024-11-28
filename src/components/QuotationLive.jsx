@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import quotes from '../data/quotationsWriter.json'; // Adjust the path if needed
+import quotes from '../data/quotationsLive.json'; // Adjust the path if needed
 
 function Quotation() {
   const [currentQuote, setCurrentQuote] = useState(null); // Current quote
@@ -34,7 +34,7 @@ function Quotation() {
   return (
     <div className={`transition-opacity duration-1000 ${fadeClass} text-center`}>
       {currentQuote && (
-        <div className="text-xl font-sans">
+        <div className="text-l font-sans">
           <p className="text-black">{`"${currentQuote.quote}"`}</p>
           <p className="text-textSecondary">{currentQuote.source}</p>
         </div>

@@ -34,7 +34,7 @@ function Quotation() {
   return (
     <div className={`transition-opacity duration-1000 ${fadeClass} text-center`}>
       {currentQuote && (
-        <div className="text-xl font-sans">
+        <div className="text-l font-sans">
           <p className="text-black">{`"${currentQuote.quote}"`}</p>
           <p className="text-textSecondary">{currentQuote.source}</p>
         </div>
