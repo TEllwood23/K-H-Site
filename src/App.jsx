@@ -6,6 +6,9 @@
 // import NavBar from './components/NavBar';
 // import Footer from './components/Footer';
 
+import Home from './pages/Home'; // Adjust the path as necessary
+
+
 function App() {
   return (
     <div className="w-full">
@@ -15,34 +18,32 @@ function App() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: "url('/images/K-H-Hero-1.png')", // Replace with your image
+            backgroundImage: "url('/images/K-H-Hero-1.png')",
+            // height: 150 // Replace with your image
           }}
         ></div>
 
         {/* Top Header */}
         <div className="fixed top-0 left-0 w-full bg-black">
           <h1
-            className="text-white text-6xl md:text-8xl font-bold text-center py-4 font-sans"
+            className="text-white text-4xl md:text-6xl lg:text-8xl font-bold text-center py-4 font-sans"
           >
             Kieran Hodgson
           </h1>
         </div>
 
         {/* Bottom Header */}
-        <div className="absolute bottom-10 left-0 w-full bg-black bg-opacity-80 text-white text-center py-4">
-          <h2 className="text-2xl md:text-4xl font-bold font-sub">Actor - Writer - Comedian</h2>
-        </div>
+        <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center flex items-center justify-center py-10">
+  <h2 className="text-2xl md:text-4xl font-bold font-sub">Actor - Writer - Comedian</h2>
+</div>
       </section>
 
       {/* Spacer Section */}
       <section
         id="home"
-        className="h-screen bg-background text-textPrimary flex items-center justify-center"
+        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
       >
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold">Welcome to My Website</h2>
-          <p className="text-lg md:text-xl mt-4">Actor - Comedian - Writer</p>
-        </div>
+        <Home />
       </section>
     </div>
   );

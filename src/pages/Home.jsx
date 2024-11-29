@@ -1,4 +1,38 @@
-// version with styling
+// VERSION WITH SCROLLING 29/11 13:48
+
+import QuotationWriter from '../components/QuotationWriter.jsx';
+import QuotationActor from '../components/QuotationActor.jsx';
+import QuotationLive from '../components/QuotationLive.jsx';
+import QuotationComedian from '../components/QuotationComedian.jsx';
+
+function Home() {
+  return (
+    <div className="container mx-auto px-7 pb-4 sticky">
+      {/* Title Section */}
+      {/* <div className="flex flex-col md:flex-row items-center justify-center">
+        <h1 className="flex-1 text-textPrimary text-border-thick text-3xl md:text-4xl lg:text-5xl font-sans lg:ml-10 drop-shadow-2xl font-bold">Kieran Hodgson.</h1>
+        <p className="flex-1 text-textPrimary text-xl md:text-2xl lg:text-3xl font-sans lg:ml-12">Actor - Comedian - Writer.</p>
+      </div> */}
+
+      <div className="flex flex-col lg:flex-row gap-4 mt-6">
+        {/* Quotations Section */}
+        <div className="flex-1 p-4 rounded-lg lg:pt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <QuotationWriter className="p-2 text-l sm:text-l md:text-l lg:text-xl"/>
+            <QuotationActor className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+            <QuotationLive className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+            <QuotationComedian className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Home;
+
+
+// SAFE version with styling
 
 // import QuotationWriter from '../components/QuotationWriter.jsx';
 // import QuotationActor from '../components/QuotationActor.jsx';
@@ -33,47 +67,47 @@
 
 
 
-// SAFE VERSION- responsive layout
+// SAFE VERSION- responsive layout 29/11/2024 13:48
 
-import QuotationWriter from '../components/QuotationWriter.jsx';
-import QuotationActor from '../components/QuotationActor.jsx';
-import QuotationLive from '../components/QuotationLive.jsx';
-import QuotationComedian from '../components/QuotationComedian.jsx';
+// import QuotationWriter from '../components/QuotationWriter.jsx';
+// import QuotationActor from '../components/QuotationActor.jsx';
+// import QuotationLive from '../components/QuotationLive.jsx';
+// import QuotationComedian from '../components/QuotationComedian.jsx';
 
-function Home() {
-  return (
-    <div className="container mx-auto px-7 pb-4">
-      {/* Title Section */}
-      <div className="flex flex-col md:flex-row items-center justify-center">
-        <h1 className="flex-1 text-textPrimary text-border-thick text-3xl md:text-4xl lg:text-5xl font-sans lg:ml-10 drop-shadow-2xl font-bold">Kieran Hodgson.</h1>
-        <p className="flex-1 text-textPrimary text-xl md:text-2xl lg:text-3xl font-sans lg:ml-12">Actor - Comedian - Writer.</p>
-      </div>
+// function Home() {
+//   return (
+//     <div className="container mx-auto px-7 pb-4 sticky">
+//       {/* Title Section */}
+//       {/* <div className="flex flex-col md:flex-row items-center justify-center">
+//         <h1 className="flex-1 text-textPrimary text-border-thick text-3xl md:text-4xl lg:text-5xl font-sans lg:ml-10 drop-shadow-2xl font-bold">Kieran Hodgson.</h1>
+//         <p className="flex-1 text-textPrimary text-xl md:text-2xl lg:text-3xl font-sans lg:ml-12">Actor - Comedian - Writer.</p>
+//       </div> */}
 
-      <div className="flex flex-col lg:flex-row gap-4 mt-6">
-        {/* Image Section */}
-        <div className="flex-1">
-          <img
-            src="/images/KH_Big_Scotland_2_with_quote.png"
-            alt="Kieran Hodgson performing his Big in Scotland show"
-            className="w-full object-cover rounded-lg shadow-lg lg:pt-10 bg-black"
-          />
-        </div>
+//       <div className="flex flex-col lg:flex-row gap-4 mt-6">
+//         {/* Image Section */}
+//           <div className="flex-1">
+//             <img
+//               src="/images/KH_Big_Scotland_2_with_quote.png"
+//               alt="Kieran Hodgson performing his Big in Scotland show"
+//               className="w-full object-cover rounded-lg shadow-lg lg:pt-10 bg-black"
+//             />
+//           </div>
 
-        {/* Quotations Section */}
-        <div className="flex-1 p-4 rounded-lg lg:pt-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <QuotationWriter className="p-2 text-l sm:text-l md:text-l lg:text-xl"/>
-            <QuotationActor className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
-            <QuotationLive className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
-            <QuotationComedian className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+//         {/* Quotations Section */}
+//         <div className="flex-1 p-4 rounded-lg lg:pt-4">
+//           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+//             <QuotationWriter className="p-2 text-l sm:text-l md:text-l lg:text-xl"/>
+//             <QuotationActor className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+//             <QuotationLive className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+//             <QuotationComedian className="p-2 text-l sm:text-l md:text-l lg:text-xl" />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
-export default Home;
+// export default Home;
 
 
 
