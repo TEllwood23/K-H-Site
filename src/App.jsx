@@ -18,25 +18,25 @@ function App() {
       <section className="relative h-screen">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{
-            backgroundImage: "url('/images/K-H-Hero-1.png')",
-            // height: 150 // Replace with your image
-          }}
-        ></div>
+  className="absolute inset-0 bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/images/K-H-Hero-1.png')",
+  }}
+></div>
+
 
         {/* Top Header */}
-        <div className="fixed top-0 left-0 w-full bg-black">
+        <div className="fixed top-0 md:pt-8 left-0 w-full bg-black">
           <h1
-            className="text-white text-4xl md:text-6xl lg:text-8xl font-bold text-center py-4 font-sans"
+            className="text-white text-6xl md:text-6xl lg:text-8xl font-bold text-center py-4 font-sans"
           >
             Kieran Hodgson
           </h1>
         </div>
 
         {/* Bottom Header */}
-        <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center flex items-center justify-center py-10">
-          <h2 className="text-2xl md:text-4xl font-bold font-sub">Actor - Writer - Comedian</h2>
+        <div className="absolute bottom-8 md:bottom-0 left-0 w-full bg-black text-white text-center flex items-center justify-center py-10">
+          <h2 className="text-3xl md:text-4xl font-bold font-sub">Actor - Writer - Comedian</h2>
         </div>
       </section>
 
