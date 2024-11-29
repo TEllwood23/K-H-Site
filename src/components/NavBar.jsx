@@ -29,7 +29,7 @@ function NavBar() {
         <ul className="flex w-full max-w-screen-xl mx-auto gap-10 justify-between">
           {filteredLinks.map((link) => (
             <li key={link.path}>
-              <Link to={link.path} className="text-textPrimary text-lg md:text-3xl font-sans">
+              <Link to={link.path} className="text-textPrimary text-lg md:text-3xl font-sans hover:text-yellow-500 hover:underline">
                 {link.label}
               </Link>
             </li>

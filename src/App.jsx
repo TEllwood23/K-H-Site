@@ -1,35 +1,92 @@
-// with CONTAINER 24/11/24
+//Start of Parallax Scroller
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './pages/Home';
+// import About from './pages/About';
+// import NavBar from './components/NavBar';
+// import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="bg-background min-h-screen flex flex-col">
-      <Router>
-        {/* Static NavBar */}
-        <div className="mb-6 md:mb-0">
-         <NavBar />
-        </div>
-        {/* Main Content */}
-        <main className="flex-grow container mx-auto px-4 max-w-screen-lg pt-4">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main>
-      </Router>
+    <div className="w-full">
+      {/* Full-Page Hero Section */}
+      <section className="relative h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/images/K-H-Hero-1.png')", // Replace with your image
+          }}
+        ></div>
 
-      {/* Footer */}
-      <Footer />
+        {/* Top Header */}
+        <div className="fixed top-0 left-0 w-full bg-black">
+          <h1
+            className="text-white text-6xl md:text-8xl font-bold text-center py-4 font-sans"
+          >
+            Kieran Hodgson
+          </h1>
+        </div>
+
+        {/* Bottom Header */}
+        <div className="absolute bottom-10 left-0 w-full bg-black bg-opacity-80 text-white text-center py-4">
+          <h2 className="text-2xl md:text-4xl font-bold font-sub">Actor - Writer - Comedian</h2>
+        </div>
+      </section>
+
+      {/* Spacer Section */}
+      <section
+        id="home"
+        className="h-screen bg-background text-textPrimary flex items-center justify-center"
+      >
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl md:text-6xl font-bold">Welcome to My Website</h2>
+          <p className="text-lg md:text-xl mt-4">Actor - Comedian - Writer</p>
+        </div>
+      </section>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+// SAFE OPTION 29/11/24 with CONTAINER (24/11/24 11:28)
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './pages/Home';
+// import About from './pages/About';
+// import NavBar from './components/NavBar';
+// import Footer from './components/Footer';
+
+// function App() {
+//   return (
+//     <div className="bg-background min-h-screen flex flex-col">
+//       <Router>
+//         {/* Static NavBar */}
+//         <div className="mb-6 md:mb-0">
+//          <NavBar />
+//         </div>
+//         {/* Main Content */}
+//         <main className="flex-grow container mx-auto px-4 max-w-screen-lg pt-4">
+//           <Routes>
+//             <Route path="/" element={<Home />} />
+//             <Route path="/about" element={<About />} />
+//           </Routes>
+//         </main>
+//       </Router>
+
+//       {/* Footer */}
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 
 

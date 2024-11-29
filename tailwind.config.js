@@ -15,6 +15,7 @@ export default {
       },
       fontFamily: {
         sans: ['Kadwa', 'sans-serif'], // Kadwa as your main font
+        sub: ['Raleway light', 'sans-serif']
       },
     },
   },
