@@ -8,6 +8,8 @@
 
 import Home from './pages/Home'; // Adjust the path as necessary
 
+import About from './pages/About'; // Adjust the path as necessary
+
 
 function App() {
   return (
@@ -34,8 +36,8 @@ function App() {
 
         {/* Bottom Header */}
         <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center flex items-center justify-center py-10">
-  <h2 className="text-2xl md:text-4xl font-bold font-sub">Actor - Writer - Comedian</h2>
-</div>
+          <h2 className="text-2xl md:text-4xl font-bold font-sub">Actor - Writer - Comedian</h2>
+        </div>
       </section>
 
       {/* Spacer Section */}
@@ -45,7 +47,28 @@ function App() {
       >
         <Home />
       </section>
+
+        {/* Parallax Section for About */}
+      <section className="relative h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/images/KH_Big_Scotland_2.jpeg')", // Replace with your new image
+          }}
+        ></div>
+      </section>
+
+      {/* About Section */}
+      <section
+        id="about"
+        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+      >
+        <About />
+      </section>
+
     </div>
+
   );
 }
 
