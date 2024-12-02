@@ -9,7 +9,8 @@
 import Home from './pages/Home'; // Adjust the path as necessary
 import About from './pages/About'; // Adjust the path as necessary
 import LiveComedy from './pages/LiveComedy';
-import TV from './pages/TV'
+import TV from './pages/TV';
+import Videos from './pages/Videos'
 
 
 function App() {
@@ -80,7 +81,7 @@ function App() {
 
       {/* LiveComedy Section */}
       <section
-        id="about"
+        id="live comedy"
         className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
       >
         <LiveComedy />
@@ -97,12 +98,31 @@ function App() {
         ></div>
       </section>
 
-      {/* LiveComedy Section */}
+      {/* TV Section */}
       <section
-        id="about"
+        id="tv"
         className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
       >
         <TV />
+      </section>
+
+       {/* Parallax Section for Videos */}
+       <section className="relative h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/images/Kieran_Prince_Andrew.jpg')", // Replace with your new image
+          }}
+        ></div>
+      </section>
+
+      {/* TV Section */}
+      <section
+        id="videos"
+        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+      >
+        <Videos />
       </section>
 
 
