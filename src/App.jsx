@@ -8,7 +8,8 @@
 
 import Home from './pages/Home'; // Adjust the path as necessary
 import About from './pages/About'; // Adjust the path as necessary
-import LiveComedy from './pages/LiveComedy'
+import LiveComedy from './pages/LiveComedy';
+import TV from './pages/TV'
 
 
 function App() {
@@ -83,6 +84,25 @@ function App() {
         className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
       >
         <LiveComedy />
+      </section>
+
+       {/* Parallax Section for TV */}
+       <section className="relative h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/images/Kieran_Navbar_Image.webp')", // Replace with your new image
+          }}
+        ></div>
+      </section>
+
+      {/* LiveComedy Section */}
+      <section
+        id="about"
+        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+      >
+        <TV />
       </section>
 
 
