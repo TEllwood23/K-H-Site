@@ -101,7 +101,8 @@ function App() {
       {/* TV Section */}
       <section
         id="tv"
-        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+        // className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-20"
+        className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
       >
         <TV />
       </section>
@@ -120,7 +121,8 @@ function App() {
       {/* TV Section */}
       <section
         id="videos"
-        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+        // className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+        className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
       >
         <Videos />
       </section>
