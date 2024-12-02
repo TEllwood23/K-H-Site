@@ -7,8 +7,8 @@
 // import Footer from './components/Footer';
 
 import Home from './pages/Home'; // Adjust the path as necessary
-
 import About from './pages/About'; // Adjust the path as necessary
+import LiveComedy from './pages/LiveComedy'
 
 
 function App() {
@@ -21,10 +21,9 @@ function App() {
   className="absolute inset-0 bg-cover bg-center"
   style={{
     backgroundImage: "url('/images/K-H-Hero-1.png')",
-  }}
-></div>
+  }}>
 
-
+    </div>
         {/* Top Header */}
         <div className="fixed top-0 md:pt-4 left-0 w-full bg-black">
           <h1
@@ -43,7 +42,7 @@ function App() {
       {/* Spacer Section */}
       <section
         id="home"
-        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+        className="min-h-screen bg-background text-textPrimary flex items-center justify-center py-16"
       >
         <Home />
       </section>
@@ -66,6 +65,26 @@ function App() {
       >
         <About />
       </section>
+
+      {/* Parallax Section for LiveComedy */}
+      <section className="relative h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/images/Maestro_Image.jpg')", // Replace with your new image
+          }}
+        ></div>
+      </section>
+
+      {/* LiveComedy Section */}
+      <section
+        id="about"
+        className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+      >
+        <LiveComedy />
+      </section>
+
 
     </div>
 
