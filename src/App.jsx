@@ -26,9 +26,9 @@ function App() {
 
 
         {/* Top Header */}
-        <div className="fixed top-0 md:pt-8 left-0 w-full bg-black">
+        <div className="fixed top-0 md:pt-4 left-0 w-full bg-black">
           <h1
-            className="text-white text-6xl md:text-6xl lg:text-8xl font-bold text-center py-4 font-sans"
+            className="text-white text-6xl md:text-6xl lg:text-6xl font-bold text-center py-4 font-sans"
           >
             Kieran Hodgson
           </h1>
