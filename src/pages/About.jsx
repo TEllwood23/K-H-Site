@@ -8,7 +8,7 @@ function About() {
         </p>
         <div className="flex flex-1 justify-center items-start">
           <img
-            src="/images/Kieran_headshot.jpeg"
+            src="/images/Kieran_Headshot_1.jpeg"
             alt="Kieran Hodgson"
             className="rounded-lg flex-grow max-h-[50vh] h-auto w-auto object-contain mx-auto mt-2 md:mt-6 lg:mt-0 max-w-xs"
           />

@@ -5,7 +5,7 @@ function Tickets() {
       <h1 className="text-4xl pb-4 font-sub">
         Buy tickets for upcoming shows at{" "}
         <a
-          href="https://www.berksnest.com/tickets"
+          href="https://www.berksnest.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-textSecondary hover:text-red-900 hover:underline transition duration-300 cursor-pointer"

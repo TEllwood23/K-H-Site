@@ -11,7 +11,8 @@ import About from './pages/About'; // Adjust the path as necessary
 import LiveComedy from './pages/LiveComedy';
 import TV from './pages/TV';
 import Videos from './pages/Videos';
-import Tickets from './pages/Tickets'
+import Tickets from './pages/Tickets';
+import Contact from './pages/Contact'
 
 
 function App() {
@@ -119,7 +120,7 @@ function App() {
         ></div>
       </section>
 
-      {/* TV Section */}
+      {/* Videos Section */}
       <section
         id="videos"
         // className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
@@ -139,15 +140,34 @@ function App() {
         ></div>
       </section>
 
-       {/* TV Section */}
+       {/* Tickets */}
        <section
-        id="videos"
+        id="tickets"
         // className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
         className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
       >
         <Tickets />
       </section>
 
+        {/* Parallax Section for Contact */}
+      <section className="relative h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/images/Kieran_Headshot_2.jpg')", // Replace with your new image
+          }}
+        ></div>
+      </section>
+
+       {/* Contact */}
+      <section
+        id="tickets"
+        // className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+        className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
+      >
+        <Contact />
+      </section>
 
     </div>
 
