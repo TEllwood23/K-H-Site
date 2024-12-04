@@ -10,7 +10,8 @@ import Home from './pages/Home'; // Adjust the path as necessary
 import About from './pages/About'; // Adjust the path as necessary
 import LiveComedy from './pages/LiveComedy';
 import TV from './pages/TV';
-import Videos from './pages/Videos'
+import Videos from './pages/Videos';
+import Tickets from './pages/Tickets'
 
 
 function App() {
@@ -125,6 +126,26 @@ function App() {
         className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
       >
         <Videos />
+      </section>
+
+      {/* Parallax Section for Tickets */}
+      <section className="relative h-screen">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: "url('/images/Kieran_Lance.jpg')", // Replace with your new image
+          }}
+        ></div>
+      </section>
+
+       {/* TV Section */}
+       <section
+        id="videos"
+        // className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+        className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
+      >
+        <Tickets />
       </section>
 
 
