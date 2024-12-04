@@ -4,12 +4,11 @@ function Tickets() {
       <div className="flex justify-center">
         <h1 className="text-4xl pb-4 font-sub">Buy tickets for upcoming shows at <span className="text-textSecondary">Berks Nest</span></h1>
       </div>
-      <div className="flex flex-col lg:flex-row text-sm md:text-2xl lg:text-2xl h-48 text-wrap lg:mb-10">
-        <p className="flex-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nulla a libero egestas commodo. Phasellus eu turpis et massa tincidunt sodales a non erat. Aliquam pretium sapien at lacinia egestas. Pellentesque bibendum ultricies auctor. Morbi facilisis tempus mauris eget efficitur. Vivamus id ex id odio efficitur venenatis.
-        </p>
-
-      </div>
+      <iframe
+          src="https://www.berksnest.com/" // Replace with the actual link
+          title="Berks Nest Tickets"
+          className="w-full h-full border rounded-lg">
+      </iframe>
     </div>
   );
 }
