@@ -4,7 +4,7 @@
 // import Home from './pages/Home';
 // import About from './pages/About';
 // import NavBar from './components/NavBar';
-// import Footer from './components/Footer';
+
 
 import Home from './pages/Home'; // Adjust the path as necessary
 import About from './pages/About'; // Adjust the path as necessary
@@ -12,7 +12,8 @@ import LiveComedy from './pages/LiveComedy';
 import TV from './pages/TV';
 import Videos from './pages/Videos';
 import Tickets from './pages/Tickets';
-import Contact from './pages/Contact'
+import Contact from './pages/Contact';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -169,7 +170,14 @@ function App() {
         <Contact />
       </section>
 
+      <div className="w-full">
+      {/* Other components */}
+      <Footer />
     </div>
+
+    </div>
+
+
 
   );
 }
