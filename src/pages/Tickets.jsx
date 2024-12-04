@@ -12,7 +12,7 @@ function Tickets() {
         >
           Berks Nest
         </a>
-</h1>
+      </h1>
       </div>
       <iframe
           src="https://www.berksnest.com/" // Replace with the actual link
