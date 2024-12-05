@@ -15,6 +15,10 @@ export default {
         textTertiary: '#FF0000',
         burgerMenuBackground: '#FFD600'
       },
+      spacing: {
+        'safe-top': 'env(safe-area-inset-top)', // Dynamically adjusts for the top safe area
+        'safe-bottom': 'env(safe-area-inset-bottom)', // Dynamically adjusts for the bottom safe area
+      },
       gradientColorStops: {
         // Define custom gradient color stops
         electricBlue: '#4B9EEA',

@@ -26,7 +26,7 @@ function App() {
         ></div>
 
         {/* Top Header */}
-        <div className="fixed top-0 md:pt-4 left-0 w-full bg-black">
+        <div className="fixed top-safe-top md:pt-4 left-0 w-full bg-black">
           <h1 className="text-white text-3xl md:text-6xl lg:text-6xl font-bold text-center py-4 font-sans">
             Kieran Hodgson
           </h1>
@@ -51,7 +51,7 @@ function App() {
         </section>
 
         {/* Parallax Section for About */}
-        <section className="relative h-screen">
+        <section className="relative h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom))]">
           <div
             className="absolute inset-0 bg-cover bg-center bg-fixed"
             style={{ backgroundImage: "url('/images/KH_Big_Scotland_2.jpeg')" }}
