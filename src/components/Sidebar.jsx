@@ -22,7 +22,7 @@ function Sidebar() {
         onClick={toggleSidebar}
         className="fixed top-2 left-4 z-50 bg-black text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition"
       >
-        <span className="text-2xl">{isOpen ? "✖" : "☰"}</span>
+        <span className="text-2xl transition hover:text-blue-500">{isOpen ? "✖" : "☰"}</span>
       </button>
 
       {/* Sidebar */}
