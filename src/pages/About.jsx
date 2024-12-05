@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="container mx-auto px-8 h-screen overflow-hidden pt-24 lg:pt-38 pb-20">
+    <div className="container mx-auto px-8 h-screen overflow-hidden pt-20 lg:pt-38 pb-20">
       <h1 className="text-4xl pb-4 font-sub">Bio/About/Meet Kieran...</h1>
       <div className="flex flex-col lg:flex-row text-sm md:text-2xl lg:text-2xl h-48 text-wrap lg:mb-10">
         <p className="flex-1">

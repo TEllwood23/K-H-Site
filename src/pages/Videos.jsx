@@ -5,7 +5,7 @@ import axios from "axios";
 
 function Videos() {
   const [videos, setVideos] = useState([]); // All fetched videos
-  const [visibleVideos, setVisibleVideos] = useState(3); // Number of videos initially visible
+  const [visibleVideos, setVisibleVideos] = useState(); // Number of videos initially visible
   const [selectedVideo, setSelectedVideo] = useState(null); // For the modal popup
 
   const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
@@ -40,7 +40,7 @@ function Videos() {
   };
 
   return (
-    <div className="container mx-auto px-4 pt-16 pb-4">
+    <div className="container mx-auto px-4 pt-10 lg:pt-16 pb-4">
       {/* Page Header */}
       <div className="w-full flex justify-center mb-6">
         <h1 className="text-4xl pb-4 font-sub">

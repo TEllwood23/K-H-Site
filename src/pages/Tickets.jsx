@@ -1,8 +1,8 @@
 function Tickets() {
   return (
-    <div className="container mx-auto px-8 h-screen overflow-hidden pt-24 lg:pt-38 pb-20 mb-20">
+    <div className="container mx-auto px-8 h-screen overflow-hidden pt-20 lg:pt-20 lg:pt-38 pb-20 mb-20">
       <div className="flex justify-center">
-      <h1 className="text-4xl pb-4 font-sub">
+      <h1 className="text-3xl lg:text-4xl pb-4 font-sub">
         Buy tickets for upcoming shows at{" "}
         <a
           href="https://www.berksnest.com/"
