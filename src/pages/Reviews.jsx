@@ -3,7 +3,7 @@
 
 import ReviewGrid from '../components/ReviewGrid'; // Import the grid component
 
-function Home() {
+function Reviews() {
   return (
     <div className="container mx-auto px-4">
       {/* <h1 className="text-textPrimary text-4xl md:text-6xl font-bold mb-6 text-center">
@@ -16,7 +16,7 @@ function Home() {
   );
 }
 
-export default Home;
+export default Reviews;
 
 
 
