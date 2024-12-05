@@ -45,7 +45,7 @@ function App() {
         {/* Spacer Section */}
         <section
           id="reviews"
-          className="min-h-screen bg-background text-textPrimary flex items-center justify-center py-16"
+          className="min-h-screen bg-gradient-dynamic from-electricBlue to-deepBlue text-textPrimary flex items-center justify-center py-16"
         >
           <Reviews /> {/* Lazy-loaded component */}
         </section>
@@ -61,7 +61,7 @@ function App() {
         {/* About Section */}
         <section
           id="about"
-          className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+          className="h-screen bg-gradient-dynamic text-textPrimary flex items-center justify-center pt-16"
         >
           <About /> {/* Lazy-loaded component */}
         </section>
@@ -77,7 +77,7 @@ function App() {
         {/* LiveComedy Section */}
         <section
           id="comedy"
-          className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
+          className="h-screen bg-gradient-dynamic text-textPrimary flex items-center justify-center pt-16"
         >
           <LiveComedy /> {/* Lazy-loaded component */}
         </section>
@@ -93,7 +93,7 @@ function App() {
         {/* TV Section */}
         <section
           id="tv"
-          className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
+          className="min-h-screen bg-gradient-dynamic text-textPrimary flex items-center justify-center pt-16 pb-16"
         >
           <TV /> {/* Lazy-loaded component */}
         </section>
@@ -109,7 +109,7 @@ function App() {
         {/* Videos Section */}
         <section
           id="videos"
-          className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
+          className="min-h-screen bg-gradient-dynamic text-textPrimary flex items-center justify-center pt-16 pb-16"
         >
           <Videos /> {/* Lazy-loaded component */}
         </section>
@@ -125,7 +125,7 @@ function App() {
         {/* Tickets Section */}
         <section
           id="tickets"
-          className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
+          className="min-h-screen bg-gradient-dynamic text-textPrimary flex items-center justify-center pt-16 pb-16"
         >
           <Tickets /> {/* Lazy-loaded component */}
         </section>
@@ -141,7 +141,7 @@ function App() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="min-h-screen bg-background text-textPrimary flex items-center justify-center pt-16 pb-16"
+          className="min-h-screen bg-gradient-dynamic text-textPrimary flex items-center justify-center pt-16 pb-16"
         >
           <Contact /> {/* Lazy-loaded component */}
         </section>

@@ -15,6 +15,19 @@ export default {
         textTertiary: '#FF0000',
         burgerMenuBackground: '#FFD600'
       },
+      gradientColorStops: {
+        // Define custom gradient color stops
+        electricBlue: '#4B9EEA',
+        skyBlue: '#89CFF0',
+        deepBlue: '#003d73',
+        purple: '#6A5ACD',
+      },
+      backgroundImage: {
+        // Define custom gradient styles
+        'gradient-blue': 'linear-gradient(180deg, #4B9EEA, #003d73)',
+        'gradient-dynamic': 'linear-gradient(180deg, #4B9EEA, #6A5ACD)',
+        'gradient-radial': 'radial-gradient(circle, #4B9EEA, #003d73)',
+      },
       fontFamily: {
         sans: ['Kadwa', 'sans-serif'], // Kadwa as your main font
         sub: ['Raleway light', 'sans-serif']
