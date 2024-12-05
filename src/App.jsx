@@ -243,7 +243,7 @@ function App() {
 
       {/* LiveComedy Section */}
       <section
-        id="live comedy"
+        id="comedy"
         className="h-screen bg-background text-textPrimary flex items-center justify-center pt-16"
       >
         <LiveComedy />

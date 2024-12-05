@@ -51,6 +51,18 @@ function Sidebar() {
             About
           </a>
           <a
+            onClick={() => handleNavigation("comedy")}
+            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+          >
+            Live Comedy
+          </a>
+          <a
+            onClick={() => handleNavigation("tv")}
+            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+          >
+            TV
+          </a>
+          <a
             onClick={() => handleNavigation("videos")}
             className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
           >
