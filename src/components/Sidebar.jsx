@@ -20,9 +20,9 @@ function Sidebar() {
       {/* Burger Button */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-4 left-4 z-50 bg-black text-white p-2 rounded-full shadow-lg focus:outline-none hover:bg-gray-800 transition"
+        className="fixed top-2 left-4 z-50 bg-black text-white p-2 rounded-full w-12 h-12 flex items-center justify-center shadow-lg focus:outline-none hover:bg-gray-800 transition"
       >
-        &#9776;
+        <span className="text-3xl">&#9776;</span>
       </button>
 
       {/* Sidebar */}
