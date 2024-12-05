@@ -40,43 +40,43 @@ function Sidebar() {
         <nav className="mt-16 space-y-6">
           <a
             onClick={() => handleNavigation("home")}
-            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+            className="block px-8 py-2 font-sans text-lg hover:text-blue-500 cursor-pointer transition"
           >
             Home
           </a>
           <a
             onClick={() => handleNavigation("about")}
-            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+            className="block px-8 py-2 font-sans text-lg hover:text-blue-500 cursor-pointer transition"
           >
             About
           </a>
           <a
             onClick={() => handleNavigation("comedy")}
-            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+            className="block px-8 py-2 font-sans text-lg hover:text-blue-500 cursor-pointer transition"
           >
             Live Comedy
           </a>
           <a
             onClick={() => handleNavigation("tv")}
-            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+            className="block px-8 py-2 font-sans text-lg hover:text-blue-500 cursor-pointer transition"
           >
             TV
           </a>
           <a
             onClick={() => handleNavigation("videos")}
-            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+            className="block px-8 py-2 font-sans text-lg hover:text-blue-500 cursor-pointer transition"
           >
             Videos
           </a>
           <a
             onClick={() => handleNavigation("tickets")}
-            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+            className="block px-8 py-2 font-sans text-lg hover:text-blue-500 cursor-pointer transition"
           >
             Tickets
           </a>
           <a
             onClick={() => handleNavigation("contact")}
-            className="block px-8 py-2 text-lg hover:text-blue-500 cursor-pointer transition"
+            className="block px-8 py-2 font-sans text-lg hover:text-blue-500 cursor-pointer transition"
           >
             Contact
           </a>
