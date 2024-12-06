@@ -30,3 +30,8 @@ amplifyconfiguration*
 
 # environmental variables
 .env
+lambda/.env
+
+
+# lambda
+lambda/node_modules
