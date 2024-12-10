@@ -16,7 +16,7 @@ exports.handler = async (event) => {
         part: "snippet",
         q: "kieran hodgson",
         type: "video",
-        maxResults: 20,
+        maxResults: 3,
       },
     });
 
