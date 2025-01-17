@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types'; // Add PropTypes for validation
-import quotes from '../data/quotationsActor.json'; // Adjust the path if needed
+import PropTypes from 'prop-types';
+import quotes from '../data/quotationsActor.json';
 
 function Quotation({ className }) {
-  const [currentQuote, setCurrentQuote] = useState(null); // Current quote
-  const [fadeClass, setFadeClass] = useState('opacity-0'); // Fade animation class
-  const [quotePool, setQuotePool] = useState([...quotes]); // Pool of quotes
+  const [currentQuote, setCurrentQuote] = useState(null);
+  const [fadeClass, setFadeClass] = useState('opacity-0');
+  const [quotePool, setQuotePool] = useState([...quotes]);
 
   const changeQuote = () => {
     setFadeClass('opacity-0'); // Fade out
@@ -44,7 +44,6 @@ function Quotation({ className }) {
   );
 }
 
-// Add PropTypes for validation
 Quotation.propTypes = {
   className: PropTypes.string, // Validate `className` as a string
 };
